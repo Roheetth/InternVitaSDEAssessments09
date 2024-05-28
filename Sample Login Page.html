@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login page for Example Website">
+    <title>Login - Example Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+        header {
+            background: #333;
+            color: #fff;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Example Website</h1>
+        <p>Welcome to the Example Website. Please log in to continue.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <div class="form-group">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+            </div>
+        </form>
+        <p>Forgot your password? <a href="#">Click here</a></p>
+    </section>
+
+    <aside>
+        <h2>Aside Section</h2>
+        <p>This is an aside section, typically used for additional information or advertisements.</p>
+    </aside>
+
+    <footer>
+        <p>&copy;
+        2024 Example Website. All rights reserved.</p>
+        <address>
+            You can contact us at <a href="mailto:support@example.com">support@example.com</a>.
+        </address>
+    </footer>
+</body>
+</html>
